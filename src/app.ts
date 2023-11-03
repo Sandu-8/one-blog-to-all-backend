@@ -4,6 +4,7 @@ import express from 'express';
 import bodyParser from "body-parser";
 import routes from "./api/routes";
 import dbInit from "./db/init";
+import insertIdentities from "./utils/helper_functions/insertIdentities";
 
 const app = express();
 const port = process.env.PORT || 4001;
@@ -15,5 +16,6 @@ app.use('/', routes);
 
 app.listen({ port }, async () => {
     await dbInit();
+    await insertIdentities();
     return console.log(`Express is listening at http://localhost:${port}`);
 });
