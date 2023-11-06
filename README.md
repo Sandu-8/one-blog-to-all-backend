@@ -15,7 +15,7 @@ DB_DRIVER=mysql\
 DB_PASSWORD=password\
 ACCESS_TOKEN_SECRET=asdkjaskdjbkasbcahdsbcjhd787e87834r43hehfh4ub34bhbj
 
-<h4>Important: DB_DRIVER MUST BE MYSQL</h4>
+<h4>Important: DB_DRIVER MUST BE MYSQL and you can add any ACCESS_TOKEN_SECRET for testing</h4>
 
 
 
